@@ -1,0 +1,310 @@
+/* ==========================================
+   STUDENT NOTES PORTAL
+   PROFESSIONAL CSS
+========================================== */
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+
+    font-family:Segoe UI, Arial, sans-serif;
+
+    background-color:#F2F6FC;
+
+    color:#333333;
+
+    line-height:1.6;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    background:linear-gradient(90deg,#0B3D91,#1565C0);
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    box-shadow:0 3px 8px rgba(0,0,0,0.3);
+
+}
+
+header h1{
+
+    font-size:36px;
+
+    letter-spacing:1px;
+
+}
+
+header h3{
+
+    margin-top:10px;
+
+    font-weight:normal;
+
+}
+
+header p{
+
+    margin-top:8px;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+nav{
+
+    background:#0D47A1;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    flex:1;
+
+}
+
+nav ul li a{
+
+    display:block;
+
+    text-align:center;
+
+    padding:18px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+nav ul li a:hover{
+
+    background:#1976D2;
+
+}
+
+nav ul li a.active{
+
+    background:#2196F3;
+
+}
+
+/* ==========================================
+   ANNOUNCEMENT BAR
+========================================== */
+
+.announcement{
+
+    background:#FFE082;
+
+    color:#000;
+
+    padding:10px;
+
+    font-weight:bold;
+
+    border-top:2px solid #1565C0;
+
+    border-bottom:2px solid #1565C0;
+
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    width:90%;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+}
+
+.hero h2{
+
+    color:#0B3D91;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.cards{
+
+    width:90%;
+
+    margin:30px auto;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.card{
+
+    flex:1;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,0.25);
+
+}
+
+.card h3{
+
+    color:#1565C0;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    text-align:justify;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#1565C0;
+
+    color:white;
+
+    padding:12px 25px;
+
+    text-decoration:none;
+
+    border-radius:5px;
+
+    font-weight:bold;
+
+}
+
+.btn:hover{
+
+    background:#0B3D91;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#0B3D91;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    nav ul{
+
+        flex-direction:column;
+
+    }
+
+    .cards{
+
+        flex-direction:column;
+
+    }
+
+    header h1{
+
+        font-size:28px;
+
+    }
+
+}
